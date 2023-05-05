@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Test Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Welcome to My Test Website</h1>
+	<p>This is a test website hosted on GitHub.</p>
+	<button id="testButton">Click me!</button>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+body {
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	color: #333;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+button {
+	background-color: #008CBA;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #005f75;
+}
+
+document.getElementById("testButton").addEventListener("click", function() {
+	alert("Hello, World!");
+});
